@@ -1,2 +1,1 @@
-# shared-mmory
-# shared-mmory
+# shared-memory
