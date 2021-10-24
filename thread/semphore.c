@@ -49,15 +49,16 @@ int main(void)
         pthread_join(tid[i], NULL);
     }
 
+    
     int inside_points;
     sem_getvalue(&semaphore, &inside_points);
 
-    int area = (inside_points / (TOTAL_POINTS * 4));
+    double area = (inside_points / (TOTAL_POINTS * 4)) * 4;
     printf("Total inside points: %d\n", inside_points);
-    printf("Area: %d\n", area);
+    printf("Area: %lf\n", area);
 
-    pthread_exit(0);    
     // wait till other threads get executed.
+    pthread_exit(0);    
     
     
     sem_destroy(&semaphore);
