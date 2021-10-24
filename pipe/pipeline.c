@@ -6,12 +6,7 @@
 #include <time.h>
 
 #define MAX_MICRO_SECONDS 9990000
-#define BUFFER_SIZE 10
 
-int in = -1, out = -1, buffer[BUFFER_SIZE];
-
-void insert(int value);
-void delete();
 float get_random_number();
 
 int main(int argc, char const *argv[]) {
