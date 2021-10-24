@@ -13,8 +13,6 @@ void* thread_func(void* p) {
 
 int main(void)
 {
-    pthread_t tid[4];
-
     for (int i = 0; i < 4; i++)
     {
         pthread_t tid;
