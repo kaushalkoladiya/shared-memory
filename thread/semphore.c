@@ -57,7 +57,6 @@ int main(void)
     printf("Total inside points: %d\n", inside_points);
     printf("Total inside points: %d\n", (inside_points / (TOTAL_POINTS * 4)) * 4);
     printf("Area: %lf\n", area);
-    printf("Total inside points: %d\n", inside_points);
 
     // wait till other threads get executed.
     pthread_exit(0);    
