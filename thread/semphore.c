@@ -8,7 +8,7 @@
 
 #define MAX_NUMBER 1
 #define MIN_NUMBER -1
-#define TOTAL_POINTS 100000
+#define TOTAL_POINTS 1000000
 
 float get_random_number();
 
@@ -55,7 +55,9 @@ int main(void)
 
     double area = (inside_points / (TOTAL_POINTS * 4)) * 4;
     printf("Total inside points: %d\n", inside_points);
+    printf("Total inside points: %d\n", (inside_points / (TOTAL_POINTS * 4)) * 4);
     printf("Area: %lf\n", area);
+    printf("Total inside points: %d\n", inside_points);
 
     // wait till other threads get executed.
     pthread_exit(0);    
